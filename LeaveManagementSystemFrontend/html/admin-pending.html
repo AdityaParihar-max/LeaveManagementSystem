@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - Pending Leaves</title>
+    <link rel="stylesheet" href="/css/admin-pending.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="active" id="nav">
+      <ul>
+        <li><a href="adminLeave.html">Apply Leave</a></li>
+        <li><a href="admin-history.html">Search</a></li>
+        <li><a href="admin-pending.html">Admin</a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+      <button class="icon" id="toggle">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+      </button>
+    </nav>
+
+    <div class="reservation-box">
+      <h2>Pending Leave Requests</h2>
+      <div style="margin-top: 10px; text-align: left">
+        <label for="itemsPerPageSelect" style="color: #fff"
+          >Leaves per page:</label
+        >
+        <select id="itemsPerPageSelect">
+          <option value="1">1</option>
+          <option value="5" selected>5</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+
+      <div id="leaveList"></div>
+      <div class="pagination" id="paginationControls"></div>
+    </div>
+
+    <script src="/js/admin-pending.js"></script>
+  </body>
+</html>

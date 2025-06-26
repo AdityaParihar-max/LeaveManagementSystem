@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Leaves</title>
+    <link rel="stylesheet" href="/css/admin-history.css" />
+  </head>
+  <body>
+    <nav class="active" id="nav">
+      <ul>
+        <li><a href="adminLeave.html">Apply Leave</a></li>
+        <li><a href="admin-history.html">Search</a></li>
+        <li><a href="admin-pending.html">Admin</a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+      <button class="icon" id="toggle">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+      </button>
+    </nav>
+
+    <div class="search-bar-wrapper">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Try searching for an employee email..."
+      />
+      <button class="search-btn" onclick="searchLeaves()">Search</button>
+    </div>
+
+    <div class="result-container">
+      <h2 id="resultTitle"></h2>
+      <div style="margin-top: 10px">
+        <label for="itemsPerPage" style="color: #333">Leaves per page:</label>
+        <select id="itemsPerPage" onchange="changeItemsPerPage()">
+          <option value="1">1</option>
+          <option value="5" selected>5</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+
+      <div id="leaveResults" class="leave-results"></div>
+
+      <div id="paginationControls" class="pagination"></div>
+    </div>
+
+    <script src="/js/admin-history.js"></script>
+  </body>
+</html>

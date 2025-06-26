@@ -1,0 +1,174 @@
+body {
+  background-color: steelblue;
+  color: #fff;
+  font-family: "Muli", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+.reservation-box {
+  margin-top: 65px;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 30px 40px;
+  width: 700px;
+}
+.reservation-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.leave-item {
+  font-family: "Muli", sans-serif;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 0;
+}
+.leave-item:last-child {
+  border-bottom: none;
+}
+.actions {
+  text-align: center;
+  margin-top: 20px;
+}
+.actions button {
+  font-family: "Muli", sans-serif;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  width: 46%;
+}
+
+.pagination {
+  font-family: "Muli", sans-serif;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.pagination button {
+  font-family: "Muli", sans-serif;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.approve-btn {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Muli", sans-serif;
+  background-color: #007bff;
+  width: 49%;
+}
+.reject-btn {
+  padding: 8px 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Muli", sans-serif;
+  background-color: #dc3545;
+  width: 49%;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+
+nav {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: width 0.6s linear;
+  overflow-x: hidden;
+  margin-bottom: 10px;
+}
+
+nav.active {
+  width: 350px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 0;
+  transition: width 0.6s linear;
+}
+
+nav.active ul {
+  width: 100%;
+}
+
+nav ul li {
+  transform: rotateY(0deg);
+  opacity: 0;
+  transition: transform 0.6s linear, opacity 0.6s linear;
+}
+
+nav.active ul li {
+  opacity: 1;
+  transform: rotateY(360deg);
+}
+
+nav ul a {
+  font-family: "Muli", sans-serif;
+  position: relative;
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.icon {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  height: 30px;
+  width: 30px;
+}
+
+.icon:focus {
+  outline: 0;
+}
+
+.icon .line {
+  background-color: #5290f9;
+  height: 2px;
+  width: 20px;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  transition: transform 0.6s linear;
+}
+
+.icon .line2 {
+  top: auto;
+  bottom: 10px;
+}
+
+nav.active .icon .line1 {
+  transform: rotate(-765deg) translateY(5.5px);
+}
+
+nav.active .icon .line2 {
+  transform: rotate(765deg) translateY(-5.5px);
+}

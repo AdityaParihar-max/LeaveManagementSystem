@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LeaveBackend", "LeaveBackend", "{BE0EC703-CCA6-5732-A68E-E175D03E88B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myLeave", "LeaveBackend\myLeave\myLeave.csproj", "{F1A4ECD1-C764-D7EC-70F7-B45D1456D785}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1A4ECD1-C764-D7EC-70F7-B45D1456D785}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1A4ECD1-C764-D7EC-70F7-B45D1456D785}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1A4ECD1-C764-D7EC-70F7-B45D1456D785}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1A4ECD1-C764-D7EC-70F7-B45D1456D785}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F1A4ECD1-C764-D7EC-70F7-B45D1456D785} = {BE0EC703-CCA6-5732-A68E-E175D03E88B4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {664CA024-721E-4BC0-8DD4-4F2A1E2977E2}
+	EndGlobalSection
+EndGlobal

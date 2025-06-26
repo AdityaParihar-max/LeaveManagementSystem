@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/employeeLeave.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <title>Apply Leave</title>
+  </head>
+  <body>
+    <nav class="active" id="nav">
+      <ul>
+        <li><a href="EmployeeLeave.html">Apply for Leave</a></li>
+        <li><a href="employeeAllLeaves.html">History </a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+      <button class="icon" id="toggle">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+      </button>
+    </nav>
+    <div class="form">
+      <h1>Apply For Leave</h1>
+      <form id="LeaveForm">
+        <div class="form-group">
+          <label for="employeeEmail">Email</label>
+          <input
+            type="text"
+            id="employeeEmailField"
+            class="form-control"
+            readonly
+          />
+        </div>
+        <div class="form-control">
+          <input type="text" id="leaveType" required />
+          <label>Leave Type</label>
+        </div>
+        <div class="form-control-date">
+          <label>Start Date</label>
+          <input type="date" id="startDate" required />
+        </div>
+        <div class="form-control-date">
+          <label>End Date</label>
+          <input type="date" id="endDate" required />
+        </div>
+        <div class="form-control">
+          <input type="text" id="reason" required />
+          <label>Reason For Leave</label>
+        </div>
+
+        <button type="submit" class="btn">Apply</button>
+      </form>
+    </div>
+    <script src="/js/employeeLeave.js"></script>
+  </body>
+</html>

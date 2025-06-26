@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Leaves</title>
+    <link rel="stylesheet" href="/css/EmployeeAllLeaves.css" />
+  </head>
+  <body>
+    <nav class="active" id="nav">
+      <ul>
+        <li><a href="EmployeeLeave.html">Apply for Leave</a></li>
+        <li><a href="employeeAllLeaves.html">History </a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+      <button class="icon" id="toggle">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+      </button>
+    </nav>
+    <div class="container">
+      <h2>My Leave History</h2>
+
+      <div class="controls">
+        <label for="itemsPerPage">Leaves per page:</label>
+        <select id="itemsPerPage">
+          <option value="1">1</option>
+          <option value="5" selected>5</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+
+      <div class="leaves-table">
+        <div>Start Date</div>
+        <div>End Date</div>
+        <div>Reason</div>
+        <div>Status</div>
+      </div>
+      <div id="leavesContainer"></div>
+
+      <div class="pagination" id="paginationControls"></div>
+    </div>
+
+    <script src="/js/employeeAllLeaves.js"></script>
+  </body>
+</html>
